@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.wrapper{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+}
+.card-wrapper{
+    display: block;
+}
+.success-wrapper{
+    display: none;
+}
+.success-card img{
+    height:60px;
+    width: 60px;
+}
+.success-card{
+    color:hsl(235, 18%, 26%);
+    height:400px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:50px 40px 50px 40px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+.success-card h1{
+    font-weight: 700;
+    font-size: 42px;
+}
+.success-card p{
+    font-weight: 400;
+    font-size: 12px;
+}
+.dismissBtn{
+    color: white;
+    padding:15px 8px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.dismissBtn:hover{
+    box-shadow: 0 0 30px 0 rgb(236, 234, 234);
+    background-color: hsl(4, 100%, 67%);
+}
+.card{
+    background-color: white;
+    height: 475px;
+    width:700px;
+    display: flex;
+    border-radius: 22px;
+}
+.card-left{
+    color:hsl(235, 18%, 26%);;
+    height:100%;
+    width:50%;
+    padding:60px 0px 70px 40px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.card-left p{
+    color:hsl(235, 18%, 26%);
+    font-size: 13px;
+    font-weight: 400;
+}
+.card-left ul{
+    font-size: 13px;
+    font-weight: 400;
+    list-style: none;
+}
+li{
+    display: flex;
+    align-items: center;
+    color:hsl(235, 18%, 26%);
+    margin-bottom: 7px;
+}
+.head{
+    width: 100%;
+    font-size: 46px;
+    font-weight: 700;
+}
+.card-right{
+    height:100%;
+    width:50%;
+    padding: 20px 0;
+}
+.card-right img{
+    position: relative;
+    height: 100%;
+    width:100%;
+    left:10px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.input label{
+    color:hsl(235, 18%, 26%);
+    font-weight: 700;
+    font-size: 14px;
+}
+input{
+    outline: none;
+    border: 1px solid grey;
+    padding: 12px 7px;
+    border-radius: 5px;
+}
+.btn{
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: black;
+    color: white;
+    padding:14px 7px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 2px 0 20px 1px rgba(162, 160, 160, 0.974);
+    background-color: hsl(4, 100%, 67%);
+}
+.invalid-input{
+    border:1px solid hsl(4, 100%, 67%);
+    background-color: hsl(4, 100%, 67%,0.05);
+    color: hsl(4, 100%, 67%);
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+.error-label{
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
