@@ -144,3 +144,46 @@ input{
     color: hsl(4, 100%, 67%);
     display: none;
 }
+@media screen and (max-width:768px){
+    .wrapper{
+        background-color: none;
+        background: none;
+    }
+    .card{
+        height:100%;
+        width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        box-shadow: 0;
+        padding: 0;
+    }
+    .card-left{  
+        width: 100%;
+        padding:15px 35px;
+    }
+    .card-right{
+        padding: 0;
+        width:100%;
+    }
+    .card-right img{
+        position: relative;
+        left:0;
+        top:0;
+        content: url(assets/images/illustration-sign-up-mobile.svg);
+        height: 100%;
+        width: 100%;
+    }
+    .success-card{
+        background-color: none;
+        background: none;
+        display: flex;
+        gap:30px;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        padding: 30px;
+    }
+    .dismissBtn{
+        margin-top: 160px;
+    }
+}
